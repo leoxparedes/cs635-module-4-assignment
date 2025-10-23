@@ -10,6 +10,9 @@ class User:
     name: str
     password: str
 
+    def to_row(self):
+        return [self.id, self.name, self.password]
+
 @dataclass
 class Customer(User):
     address: str = ''

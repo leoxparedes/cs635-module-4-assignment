@@ -3,7 +3,7 @@ services.py
 Business logic separated from the UI.
 """
 from . import database as db
-from .models import Customer, Transaction
+from .models import Customer, Transaction, User
 
 CUSTOMER_FILE = 'customer_db.txt'
 TRANSACTION_FILE = 'transaction_db.txt'
@@ -32,6 +32,9 @@ def add_customer(customer: Customer, initial_balance=0):
     db.append_csv(CUSTOMER_FILE, customer.to_row(initial_balance))
     # record initial deposit transaction
     db.append_csv(TRANSACTION_FILE, Transaction(customer.id, initial_balance, 'Deposit').to_row())
+
+def add_admin(admin: User):
+    db.append_csv(ADMIN_FILE, admin.to_row())
 
 def add_transaction(transaction: Transaction):
     db.append_csv(TRANSACTION_FILE, transaction.to_row())
