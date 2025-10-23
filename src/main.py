@@ -3,7 +3,7 @@ main.py
 Command-line interface for the refactored banking system.
 """
 from . import services as svc
-from .models import Customer, Transaction
+from .models import Customer, Transaction, User
 
 def admin_menu_loop(admin_name):
     while True:
@@ -65,8 +65,8 @@ def customer_menu_loop(customer_id):
 def main_menu():
     while True:
         print('\n**** WELCOME TO REFACTORED ONLINE BANK ****')
-        print('1. Admin\n2. Customer\n3. Exit')
-        choice = input('Select (1-3): ').strip()
+        print('1. Admin\n2. Customer\n3. First Time User\n4. Exit')
+        choice = input('Select (1-4): ').strip()
         if choice == '1':
             aid = input('Admin ID: ').strip()
             pwd = input('Password: ').strip()
@@ -85,6 +85,13 @@ def main_menu():
             else:
                 print('Invalid customer credentials.')
         elif choice == '3':
+            cid = input('Please enter new Admin ID: ').strip()
+            pwd = input('Please enter new Admin password: ').strip()
+            name = input('Please enter new Admin name: ').strip()
+            first_admin = User(cid, name, pwd)
+            svc.add_admin(first_admin)
+            print(F'New admin {name} created.')
+        elif choice == '4':
             print('Goodbye.')
             break
         else:

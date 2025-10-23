@@ -38,7 +38,7 @@ This repository is a banking system that allows the customer and the bank to per
 ```
 
 # Getting Started with the Refactored Banking System
-To use this banking system, run 'main.py' under the 'src' folder.
+To use this banking system, run 'main.py' under the 'src' folder by using the command at the top level: python -m src.main
 
 # How To Run Tests 
 The refactored repository uses Pytest for unit testing. There are a total of 9 tests between database tests, models tests, and service tests. All tests can be found under the "tests" folder in the repository. 
