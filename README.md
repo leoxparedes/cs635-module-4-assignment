@@ -9,6 +9,8 @@ The purpose of this assignment is apply refactoring techniques to a repository t
 The repo we have decided to refactor is linked below. 
 - https://github.com/caesarmario/online-banking-system-with-python/blob/main/Simple%20Online%20Banking%20System.py
 
+# What does this repository do ?
+This repository is a banking system that allows the customer and the bank to perform transactions. It simulates the transaction management system. 
 
 # Original Repository Structure 
 ```
@@ -34,5 +36,7 @@ The repo we have decided to refactor is linked below.
 |
 └─ README.md             
 ```
+
+# Getting Started with Refactored Banking System
 
 
