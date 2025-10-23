@@ -1,6 +1,7 @@
-%% Minimal UML for src
+# UML Diagram
+```mermaid
 classDiagram
-  direction LR
+direction LR
 
   class User {
     +id: str
