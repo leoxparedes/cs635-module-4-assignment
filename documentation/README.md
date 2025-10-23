@@ -34,7 +34,10 @@ This repository is a banking system that allows the customer and the bank to per
 │  ├─ models_tests.py  
 │  ├─ service_tests.py     
 |
-└─ README.md             
+└─ documentation/
+   ├─ README.md     
+   ├─ UML.md  
+
 ```
 
 # Getting Started with the Refactored Banking System
