@@ -6,3 +6,12 @@ https://github.com/caesarmario/online-banking-system-with-python/blob/main/Simpl
 
 Old code and README are located in src_old for reference.
 Bew code is located in src and test suites are locaed in tests.
+
+How to test project:
+# Make sure that pytest is installed
+python -m pip install pytest
+
+# Run the tests
+python -m pytest -q ./tests/database_tests.py
+python -m pytest -q ./tests/models_tests.py
+python -m pytest -q ./tests/services_tests.py

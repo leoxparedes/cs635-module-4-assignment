@@ -1,5 +1,5 @@
 import pytest
-from src.services import services as svc
+from src import services as svc
 from src.models import Customer, Transaction
 import tempfile, os
 
