@@ -2,20 +2,21 @@ import pytest
 from src import database as db
 import tempfile
 
+#Test for writing and appending to temp database file
 def test_read_write_append(tmp_path):
-    # use temp file
+    #Start with temp file
     f = tmp_path / "testfile.txt"
-    # initially empty
+    #Initialize the file as empty
     assert db.read_csv(f) == []
-    # append one row
+    #Append one row
     db.append_csv(f, ["1", "Alice", "100"])
     content = db.read_csv(f)
     assert content == [["1", "Alice", "100"]]
-    # append another row
+    #Append another row
     db.append_csv(f, ["2","Bob","200"])
     content = db.read_csv(f)
     assert content == [["1","Alice","100"], ["2","Bob","200"]]
-    # overwrite file
+    #Overwrite the file
     db.write_csv(f, [["X","Y","Z"]])
     content = db.read_csv(f)
     assert content == [["X","Y","Z"]]

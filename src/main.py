@@ -1,10 +1,11 @@
 """
-main.py
-Command-line interface for the refactored banking system.
+The main Command-line interface for the banking system after being refined.
+Added ability to create first time Admin since database dynamically adds users.
 """
 from . import services as svc
 from .models import Customer, Transaction, User
 
+#Admin menu that allows for new users, search users, and view customer transactions
 def admin_menu_loop(admin_name):
     while True:
         print(f"\n=== ADMIN: {admin_name} ===")
@@ -39,6 +40,7 @@ def admin_menu_loop(admin_name):
         else:
             print('Invalid choice.')
 
+#Customer menu that allows for withdrawals, deposits, and check balance
 def customer_menu_loop(customer_id):
     while True:
         print(f"\n=== CUSTOMER: {customer_id} ===")
@@ -62,6 +64,7 @@ def customer_menu_loop(customer_id):
         else:
             print('Invalid choice.')
 
+#Main start up menu for choosing to login as Admin, Customer, or start first Admin account
 def main_menu():
     while True:
         print("\n**** WELCOME TO APU's ONLINE BANKING SYSTEM ****\n")
