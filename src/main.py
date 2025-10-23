@@ -1,5 +1,5 @@
 """
-The main Command-line interface for the banking system after being refined.
+The main command line interface for the banking system after being refined.
 Added ability to create first time Admin since database dynamically adds users.
 """
 from . import services as svc
