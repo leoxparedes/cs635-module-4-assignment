@@ -11,13 +11,16 @@ The repo we have decided to refactor is linked below.
 
 
 # Original Repository Structure 
+```
 ├─ README.md                  
 ├─ Simple Online Banking System.py
 ├─ admin_db.txt
 ├─ customer_db.txt
 └─ transaction_db.txt
+```
 
 # Refactored Repository Structure 
+```
 ├─ src/
 │  ├─ database.py          
 │  ├─ main.py          
@@ -30,6 +33,6 @@ The repo we have decided to refactor is linked below.
 │  ├─ service_tests.py     
 |
 └─ README.md             
-
+```
 
 
