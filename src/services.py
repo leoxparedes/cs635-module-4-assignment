@@ -1,5 +1,5 @@
 """
-Business logic separated used to support the features in main
+Business logic separated to be used to support the features in main
 """
 from . import database as db
 from .models import Customer, Transaction, User
@@ -14,7 +14,7 @@ def load_customers():
     rows = db.read_csv(CUSTOMER_FILE)
     customers = {}
     for r in rows:
-        # expected: id,name,address,phone,password,balance
+        #Expected: id, name, address, phone, password, balance
         if len(r) < 6: 
             continue
         cid, name, addr, phone, pwd, bal = r[:6]
