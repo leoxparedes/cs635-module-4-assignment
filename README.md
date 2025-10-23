@@ -11,7 +11,6 @@ The repo we have decided to refactor is linked below.
 
 
 # Original Repository Structure 
-.
 ├─ README.md                  
 ├─ Simple Online Banking System.py
 ├─ admin_db.txt
@@ -19,20 +18,17 @@ The repo we have decided to refactor is linked below.
 └─ transaction_db.txt
 
 # Refactored Repository Structure 
-.
 ├─ src/
-│  ├─ __init__.py          
 │  ├─ database.py          
-│  ├─ main.py              
-│  ├─ models.py            
-│  └─ services.py          
-│
+│  ├─ main.py          
+│  ├─ models.py             
+│  ├─ services.py           
+│         
 ├─ tests/
-│  ├─ __pycache__/         
-│  ├─ database_tests.py    
-│  ├─ models_tests.py      
-│  └─ services_tests.py    
-│
+│  ├─ database_tests.py     
+│  ├─ models_tests.py  
+│  ├─ service_tests.py     
+|
 └─ README.md             
 
 
