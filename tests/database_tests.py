@@ -1,5 +1,5 @@
 import pytest
-from refactored_bank import database as db
+from src.database import database as db
 import tempfile
 
 def test_read_write_append(tmp_path):

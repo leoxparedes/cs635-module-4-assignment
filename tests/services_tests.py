@@ -1,6 +1,6 @@
 import pytest
-from refactored_bank import services as svc
-from refactored_bank.models import Customer, Transaction
+from src.services import services as svc
+from src.models import Customer, Transaction
 import tempfile, os
 
 @pytest.fixture

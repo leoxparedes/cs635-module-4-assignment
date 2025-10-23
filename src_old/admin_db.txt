@@ -1,2 +1,0 @@
-a001,Mario,qwe123
-a002,Chris,qwe123

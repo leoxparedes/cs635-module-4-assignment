@@ -1,5 +1,5 @@
 import pytest
-from refactored_bank.models import Customer, Transaction
+from src.models import Customer, Transaction
 
 def test_customer_dataclass():
     c = Customer("001","Alice","pass123","123 St","555-111")

@@ -2,7 +2,7 @@
 services.py
 Business logic separated from the UI.
 """
-from . import database as db
+from .database import database as db
 from .models import Customer, Transaction
 
 CUSTOMER_FILE = 'customer_db.txt'
