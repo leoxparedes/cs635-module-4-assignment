@@ -62,16 +62,16 @@ def test_transactions(temp_db_files):
     txs, bal = svc.get_transactions("005")
     assert bal == 120
     assert txs[-1]['amount'] == -30
-    # Reset customer
+    #Reset customer
     svc.add_transaction(Transaction("005",-120,"Withdrawal"))
 
 
 def test_edge_cases(temp_db_files):
-    # malformed line in customer_db.txt
+    #Introduce a messed up line in customer_db.txt
     cfile, tfile, afile = temp_db_files
     cfile.write_text("bad,line\n010,Alice,pass123\n")
     customers = svc.load_customers()
-    # empty transaction file
+    #Try empty transaction file
     tfile.write_text("")
     txs, bal = svc.get_transactions("010")
     assert txs == [] and bal == 0

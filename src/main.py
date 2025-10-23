@@ -64,7 +64,7 @@ def customer_menu_loop(customer_id):
 
 def main_menu():
     while True:
-        print('\n**** WELCOME TO REFACTORED ONLINE BANK ****')
+        print("\n**** WELCOME TO APU's ONLINE BANKING SYSTEM ****\n")
         print('1. Admin\n2. Customer\n3. First Time User\n4. Exit')
         choice = input('Select (1-4): ').strip()
         if choice == '1':
