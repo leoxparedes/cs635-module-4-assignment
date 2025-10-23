@@ -1,8 +1,39 @@
-# cs635-module-4-assignment
-Module 4 Assignment
+## CS635 Module 4 Assignment: Real-World Refactoring 
 
-Referenced Repo Github Link:
-https://github.com/caesarmario/online-banking-system-with-python/blob/main/Simple%20Online%20Banking%20System.py
+# Group: The Defense
+Members: Leo Paredes, Brandon Reynolds
 
-Old code and README are located in src_old for reference.
-Bew code is located in src and test suites are locaed in tests.
+# Abstract
+The purpose of this assignment is apply refactoring techniques to a repository to improve quality, maintainability, and performance. 
+
+The repo we have decided to refactor is linked below. 
+- https://github.com/caesarmario/online-banking-system-with-python/blob/main/Simple%20Online%20Banking%20System.py
+
+
+# Original Repository Structure 
+.
+├─ README.md                  
+├─ Simple Online Banking System.py
+├─ admin_db.txt
+├─ customer_db.txt
+└─ transaction_db.txt
+
+# Refactored Repository Structure 
+.
+├─ src/
+│  ├─ __init__.py          
+│  ├─ database.py          
+│  ├─ main.py              
+│  ├─ models.py            
+│  └─ services.py          
+│
+├─ tests/
+│  ├─ __pycache__/         
+│  ├─ database_tests.py    
+│  ├─ models_tests.py      
+│  └─ services_tests.py    
+│
+└─ README.md             
+
+
+
